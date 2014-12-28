@@ -1,7 +1,5 @@
 Single Cycle Processor
 
-Designed by Chi ZHOU
-
 1)
 This processor can handle the following subset of the MIPS instruction set:
 • arithmetic: add, addi, addu, sub, subu
