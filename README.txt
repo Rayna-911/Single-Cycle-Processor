@@ -8,9 +8,25 @@ This processor can handle the following subset of the MIPS instruction set:
 • conditional branch: beq, bne, slt, sltu
 
 2)
+Test Files 
+
+The format of the input files is 
+address / data_at_address; 
+Thus, the input file has one address-data pair per line in hex. Comment lines are allowed, and must begin with a #. There are three test files attached 
+
+to the assignment, so you don't need to write your own test files. Here are the test programs: 
+
+• a sort program – sort_corrected_branch.dat 
+• a summation program – unsigned_sum.dat 
+• a simple transaction simulator – bills_branch.dat 
+
+The test files are extracted from a MIPS simulator called SPIM. The simulator assumes that code begins at address 0x00400020, so make sure that 
+the program counter is loaded with this initial value. 
+
+3)
 It is written by VHDL structural style. Only basic gates are allowed to use behavioral style
 
-3)Control signals truth table
+4)Control signals truth table
 opcode		000100	000101	100011	101011	001000	000000
 		beq	bne	lw	sw	addi	R-type
 RegDst		x	x	0	x	0	1
